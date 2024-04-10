@@ -1,17 +1,10 @@
-Οδηγίες εκτέλεσης του αρχείου για την λογιστική παλινδρόμηση.
+File execution instructions for logistic regression.
 
-1.)Αν πιο πριν έχουμε τρέξει τον ταξινομητή Bayes πρέπει να πάμε στο Path που βρίσκεται ο φάκελος 
-με τα δεδομένα της imdb και να σβήσουμε τον φάκελο με όνομα dictionary.txt τον οποίο είχαμε δημιουργήσει πιο πριν.Αν όχι προχωράμε κατευθείαν στο βήμα 2.
-2.)Πρέπει να φτιάξουμε το λεξιλόγιο μας με τις πιο συνηθισμένες λέξεις.Για να συμβεί αυτό ανοιίγουμε το αρχείο data.py ώστε να επεξεργαστούμε κάποια στοιχεία.
-   i) Στην συνάρτηση __init__ δώστε στην mostCommonWordsToKeep έναν αριθμό για τις πιο συνηθισμένες λέξεις που θέλουμε να κρατήσουμε.(Υπάρχει σχετικό σχόλιο δίπλα απο την εντολή).
-   ii)Στην συνάρτηηση __init__ δώστε στην mostCommonWordsToDiscard έναν αριθμό που θα δείχνει πόσες απο τις πρώτες πιο συνηθισμένες λέξεις που έχουμε ήδη επιλέξει στο (i) θα απορρίψουμε σύμφωνα με την εκφώνηση(Υπάρχει σχετικό σχόλιο δίπλα απο την εντολή).
-   Τα υποερωτήματα (i) και (ii) έχουν κάποιες προκαθορισμένες τιμές τις οποίες μπορείτε να μην αλλάξετε αν δεν θέλετε.
-   iii)Στην συνάρτηση link δώστε στην url το path που βρίσκεται ο φάκελος με τα δεδομένα απο το Imdb όπως ακριβώς είναι στην προκαθορισμένη τιμή του url.Προσέξτε πως για να δουλέψει πρέπει να βάζετε διπλή κάθετο(\\) μετά απο κάθε φάκελο.Αυτό το βήμα είναι υποχρεωτικο για να τρέξει το αρχείο στον υπολογιστή σας.
-3.)Τώρα για να δημιουργήσουμε την βιβλιοθήκη μας ανοίγουμε το cmd και ακολουθούμε τα εξής βήματα:
-   i)Αφού έχουμε κατεβάσει το φάκελο 3190077_3190074 στα Downloads πηγαίνουμε με cd στα downloads/3190077_3190074/Logistic_Regression και πατάμε enter
-   ii)Στην συνέχεια πληκτρολογούμε py data.py και περιμένουμε να ολοκληρωθεί η εκτέλεση.
+We need to build our vocabulary with the most common words. To do this we open the data.py file to edit some data.
+    i) In the __init__ function give mostCommonWordsToKeep a number for the most common words we want to keep. (There is a relevant comment next to the command).
+    ii) In the __init__ function give mostCommonWordsToDiscard a number that will indicate how many of the first most common words we have already selected in (i) we will discard according to the pronunciation (There is a relevant comment next to the command).
+    Sub-queries (i) and (ii) have some default values which you can not change if you don't want to.
+    iii) In the link function, give the url the path where the folder with the data from Imdb is located exactly as it is in the predefined value of the url. Pay attention that for it to work you must put a double slash (\\) after each folder. This step is mandatory to run the file on your computer.
 
-4.)Τώρα για να τρέξουμε το πρόγραμμα της λογιστικής παλινδρόμησης απο το λεξιλόγιο που έχουμε δημιουργήσει πρέπει απλα να τρέξουμε το αρχείο.Στο σημείο που έχουμε μείνει απο το 3 πληκτρολογουμε py logistic.py και εκτελείται η εκπαίδευση και το τεστάρισμα του αλγορίθμου μας.
-
-Note1:Το κάθε αρχείο py χρειάζεται κάποια λεπτά για να τρέξει(Ειδικά αν χρησιμοποιήσουμε μεγάλο αριθμό λέξεων που θέλουμε να κρατήσουμε).
-Note2:Αν στην εκτέλεση του logistic.py απο το cmd προκύπτει error τρέξτε το απο το idle.
+Note1: Each py file takes some minutes to run (Especially if we use a large number of words that we want to keep).
+Note2: If an error occurs when executing logistic.py from cmd, run it from idle.
